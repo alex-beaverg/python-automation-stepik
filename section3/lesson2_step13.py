@@ -3,9 +3,9 @@ Run with PyTest:
     pytest -s -v lesson2_step13.py
     pytest -s -v --browser_name=firefox lesson2_step13.py
     pytest -s -v --browser_name=chrome lesson2_step13.py
+    pytest -v --tb=line --reruns 1 --browser_name=chrome lesson2_step13.py
 """
 
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 import unittest
 
